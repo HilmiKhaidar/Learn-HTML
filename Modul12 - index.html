@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Modul 12: Formulir HTML</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      padding: 200px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 50px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(192, 6, 6, 0.1);
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 30px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 8px;
+      padding: 20px 20px;
+      background: #07dd47;
+      color: rgb(161, 30, 30);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="proses.php" method="POST">
+    <h2>Formulir Kontak</h2>
+
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+    <label>Hobi:</label>
+    <label><input type="checkbox" name="hobi[]" value="Ngoding"> Ngoding</label>
+    <label><input type="checkbox" name="hobi[]" value="Gaming"> Gaming</label>
+
+    <label>Jenis Kelamin:</label>
+    <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+    <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+</body>
+</html>
