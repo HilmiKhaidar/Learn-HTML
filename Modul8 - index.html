@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 8: Layout Sederhana</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 10;
+    }
+    .header, .footer {
+      background-color: #236e3c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .main {
+      display: flex;
+    }
+    .sidebar {
+      background-color: #0080ff;
+      width: 50%;
+      padding: 50px;
+      box-sizing: border-box;
+    }
+    .content {
+      background-color: #0763c0;
+      width: 50%;
+      padding: 50px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Header Halaman</h1>
+  </div>
+
+  <div class="main">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Menu navigasi atau info tambahan.</p>
+    </div>
+    <div class="content">
+      <h2>Konten Utama</h2>
+      <p>Ini adalah area utama untuk menampilkan isi halaman web.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Footer Halaman &copy; 2025</p>
+  </div>
+
+</body>
+</html>
