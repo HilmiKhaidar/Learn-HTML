@@ -1,0 +1,76 @@
+<!-- Materi Utama:
+🔹 Apa itu Media Queries?
+Media Queries itu fitur di CSS untuk mengecek ukuran layar (screen size), lalu mengubah style sesuai kebutuhan.
+
+Contoh:
+Kalau layar kecil (misal HP), sidebar ditaruh di bawah konten. -->
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 9: Layout Responsif</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header, .footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .main {
+      display: flex;
+    }
+    .sidebar {
+      background-color: #f8f9fa;
+      width: 25%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .content {
+      background-color: #e9ecef;
+      width: 75%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Media Query untuk layar kecil */
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+      }
+      .sidebar, .content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Header Halaman</h1>
+  </div>
+
+  <div class="main">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Menu navigasi atau info tambahan.</p>
+    </div>
+    <div class="content">
+      <h2>Konten Utama</h2>
+      <p>Ini adalah area utama untuk menampilkan isi halaman web.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Footer Halaman &copy; 2025</p>
+  </div>
+
+</body>
+</html>
